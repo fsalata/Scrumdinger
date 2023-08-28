@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E46383592A9B8C6F00AED0F8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46383582A9B8C6F00AED0F8 /* Theme.swift */; };
+		E463835B2A9B8DC200AED0F8 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463835A2A9B8DC200AED0F8 /* DailyScrum.swift */; };
+		E463835D2A9B8EA500AED0F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463835C2A9B8EA500AED0F8 /* CardView.swift */; };
+		E48E53DC2A9CD8BE0003B19E /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E53DB2A9CD8BE0003B19E /* TrailingIconLabelStyle.swift */; };
 		E4EC651F29EF68FC009596DE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC651E29EF68FC009596DE /* ScrumdingerApp.swift */; };
 		E4EC652129EF68FC009596DE /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC652029EF68FC009596DE /* MeetingView.swift */; };
 		E4EC652329EF68FD009596DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EC652229EF68FD009596DE /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E46383582A9B8C6F00AED0F8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		E463835A2A9B8DC200AED0F8 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		E463835C2A9B8EA500AED0F8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E48E53DB2A9CD8BE0003B19E /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		E4EC651B29EF68FC009596DE /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EC651E29EF68FC009596DE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		E4EC652029EF68FC009596DE /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -71,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E46383572A9B8C5C00AED0F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E46383582A9B8C6F00AED0F8 /* Theme.swift */,
+				E463835A2A9B8DC200AED0F8 /* DailyScrum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E4EC651229EF68FC009596DE = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +111,11 @@
 		E4EC651D29EF68FC009596DE /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				E46383572A9B8C5C00AED0F8 /* Models */,
 				E4EC651E29EF68FC009596DE /* ScrumdingerApp.swift */,
 				E4EC652029EF68FC009596DE /* MeetingView.swift */,
+				E463835C2A9B8EA500AED0F8 /* CardView.swift */,
+				E48E53DB2A9CD8BE0003B19E /* TrailingIconLabelStyle.swift */,
 				E4EC652229EF68FD009596DE /* Assets.xcassets */,
 				E4EC652429EF68FD009596DE /* Preview Content */,
 			);
@@ -257,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E463835B2A9B8DC200AED0F8 /* DailyScrum.swift in Sources */,
+				E48E53DC2A9CD8BE0003B19E /* TrailingIconLabelStyle.swift in Sources */,
+				E46383592A9B8C6F00AED0F8 /* Theme.swift in Sources */,
 				E4EC652129EF68FC009596DE /* MeetingView.swift in Sources */,
 				E4EC651F29EF68FC009596DE /* ScrumdingerApp.swift in Sources */,
+				E463835D2A9B8EA500AED0F8 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,6 +449,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
