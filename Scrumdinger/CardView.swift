@@ -36,7 +36,7 @@ struct CardView: View {
 }
 
 #Preview(traits: .fixedLayout(width: 400, height: 60)) {
-    var scrum = DailyScrum.sampleData[0]
+    let scrum = DailyScrum.sampleData[0]
 
     return CardView(scrum: scrum)
         .background(scrum.theme.mainColor)
